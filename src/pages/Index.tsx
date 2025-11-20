@@ -18,7 +18,7 @@ import {
   TrendingUp,
   Heart,
   Leaf,
-} from "lucide-react";
+} from "lucide-react"; HERU
 import educationImage from "@/assets/education-icon.jpg";
 import campaignImage from "@/assets/campaign-icon.jpg";
 import wasteImage from "@/assets/waste-icon.jpg";
