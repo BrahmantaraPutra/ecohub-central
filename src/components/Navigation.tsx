@@ -47,7 +47,7 @@ const Navigation = () => {
               <Leaf className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="text-xl lg:text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              EcoHub
+              EcoPedia
             </span>
           </div>
 
@@ -58,7 +58,7 @@ const Navigation = () => {
                 key={item.name}
                 variant="ghost"
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground transition-colors"
               >
                 {item.name}
               </Button>

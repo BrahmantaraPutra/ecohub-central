@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-nature.jpg";
+import heroImage from "@/assets/primary-bg-web.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -33,11 +33,11 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight">
             Selamat Datang di{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              EcoHub
+              EcoPedia
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl font-regular text-foreground max-w-3xl mx-auto leading-relaxed">
             Platform all-in-one untuk edukasi, kampanye, dan aksi nyata peduli
             lingkungan. Bersama kita wujudkan masa depan yang lebih hijau dan
             berkelanjutan.

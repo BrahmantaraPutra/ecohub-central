@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import SectionHeader from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 import {
   GraduationCap,
   Megaphone,
@@ -23,6 +25,9 @@ import educationImage from "@/assets/education-icon.jpg";
 import campaignImage from "@/assets/campaign-icon.jpg";
 import wasteImage from "@/assets/waste-icon.jpg";
 import travelImage from "@/assets/travel-icon.jpg";
+import campagin1 from "@/assets/campaign-1.jpg";
+import Pandu from "@/assets/pandu.jpg";
+import sampah from "@/assets/baksampah.jpg";
 
 const Index = () => {
   return (
@@ -108,6 +113,7 @@ const Index = () => {
               icon={Users}
               title="Gerakan Aksi Hijau"
               description="Bergabung dengan komunitas volunteer dan buat perubahan nyata"
+              image={campagin1}
               items={[
                 "Challenge harian",
                 "Form volunteer",
@@ -163,6 +169,7 @@ const Index = () => {
               icon={Recycle}
               title="Panduan Pemilahan"
               description="Belajar cara memilah sampah dengan benar untuk daur ulang maksimal"
+              image={sampah}
               items={[
                 "Kategori sampah lengkap",
                 "Video tutorial",
@@ -222,6 +229,56 @@ const Index = () => {
               ]}
               gradient="secondary"
             />
+          </div>
+
+          <div className="mt-16 mb-14 grid grid-cols-2 md:grid-cols-4 gap-6 text-center backdrop-blur-sm bg-blue-50 p-6 rounded-lg shadow-md">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="text-4xl font-bold text-primary">
+                <CountUp end={181} duration={4} />
+              </div>
+              <div className="text-muted-foreground">Siswa</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="text-4xl font-bold text-primary">
+                <CountUp end={10} duration={4} />
+              </div>
+              <div className="text-muted-foreground">Guru</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <div className="text-4xl font-bold text-primary">
+                <CountUp end={2461} duration={4.5} />
+              </div>
+              <div className="text-muted-foreground">Alumni</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <div className="text-4xl font-bold text-primary">
+                <CountUp end={30} duration={4} />
+              </div>
+              <div className="text-muted-foreground">Prestasi</div>
+            </motion.div>
           </div>
 
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6">
