@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import {
-  GraduationCap,
+  GraduationCap, zabella istri aqil
   Megaphone,
   Recycle,
   TreePine,
